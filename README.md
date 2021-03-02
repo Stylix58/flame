@@ -4,7 +4,7 @@ Extension installer for Flarum.
 # Install
 **IMPORTANT**: Please check if you have installed [Python 3](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py). If not, please install these softwares!
 
-Run in an terminal `wget https://raw.githubusercontent.com/Stylix58/flame/main/install.sh | bash`.
+Run in an terminal `wget https://raw.githubusercontent.com/Stylix58/flame/main/install.sh || bash`.
 
 # Commands
 Prefix: `flame`
