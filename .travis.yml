@@ -3,7 +3,7 @@ python:
   - "3.8"
 install:
   - pip install -r requirements.txt
-script: pyinstaller -f -n flame main.py
+script: pyinstaller --onefile --name flame -- main.py
 deploy:
   provider: releases
   api_key: "9664ec749ced5ebb66fe6143330ee9133e98af11"
