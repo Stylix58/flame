@@ -11,9 +11,9 @@ pip3 install -r requirements.txt pyinstaller
 echo "Compiling Flame..."
 pyinstaller --onefile --name flame -- main.py
 cd dist
-mv ./flame ../../../flame.exec
+mv flame /usr/bin
 echo "Finalizing installation..."
-cd ../../../
+cd ../../..
 mv ./flame.exec /usr/bin/flame
-sudo rm -rf ./flame-inst flame-install.sh
+rm -rf ./flame-inst flame-install.sh
 echo "Installation finished!"
