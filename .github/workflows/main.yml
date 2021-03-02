@@ -19,7 +19,12 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: name-of-artifact
+        name: flame-lastest
+        path: src/dist/linux
+        
+    - uses: actions/download-artifact@v2
+      with:
+        name: flame-lastest
         path: src/dist/linux
         
     - name: Release
@@ -27,5 +32,5 @@ jobs:
       if: startsWith(github.ref, 'refs/tags/')
       env:
         GHR_COMPRESS: gz
-        GHR_PATH: src/dist/linux
+        GHR_PATH: src/dist/linux/flame-lastest.tar.gz
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
