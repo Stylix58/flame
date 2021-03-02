@@ -12,7 +12,7 @@ cd dist
 mv flame ../../flame/
 echo "Delete Flame's local Git repository..."
 cd ../../
-rm -r ./flame
+rm -rf ./flame/
 echo "Installation finished!"
 echo "WARNING: You need to change Flame of directory."
 echo "For make this task, just type in this terminal (you need to have sudo rights): sudo mv flame /usr/bin/flame"
