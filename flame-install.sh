@@ -11,9 +11,7 @@ pip3 install pyinstaller
 echo "Compiling Flame..."
 pyinstaller --onefile --name flame -- main.py
 cd dist
-mv ./flame ../../../flame.exec/
-echo "Removing generated files and folders..."
-sudo rm -r -f ./flame-inst ./install.sh
+mv ./flame ../../../flame.exec
 echo "Installation finished!"
-echo "WARNING: You need to change Flame of directory."
+echo "WARNING: You need to change Flame of directory. You will need also to remove youself the generated files and folders."
 echo "For make this task, just type in this terminal (you need to have sudo rights): sudo mv ./flame-inst/flame.exec /usr/bin/flame"
