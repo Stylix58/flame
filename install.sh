@@ -5,13 +5,13 @@ echo "Clone GitHub repository..."
 git clone https://github.com/Stylix58/flame
 cd flame
 echo "Installing PyInstaller..."
-pip install pyinstaller
+pip3 install pyinstaller
 echo "Compiling Flame..."
 pyinstaller --onefile --name flame -- main.py
 cd dist
-mv flame ../../flame
+mv flame ../../flame/
 echo "Delete Flame's local Git repository..."
-cd ../..
+cd ../../
 rm -r /flame
 echo "Installation finished!"
 echo "WARNING: You need to change Flame of directory."
