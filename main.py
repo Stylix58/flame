@@ -35,13 +35,13 @@ def check_env():
 
 def install(ext):
     check_env()
-    subprocess.run("cd " + os.environ[__install_loc_env__] + " | composer require -q -n " + ext, shell=True,
+    subprocess.run("cd " + conf_e["install_loc"] + " | composer require -q -n " + ext, shell=True,
                    check=True)
 
 
 def uninstall(ext):
     check_env()
-    subprocess.run("cd " + os.environ[__install_loc_env__] + " | composer remove -q -n " + ext, shell=True,
+    subprocess.run("cd " + conf_e["install_loc"] + " | composer remove -q -n " + ext, shell=True,
                    check=True)
 
 
