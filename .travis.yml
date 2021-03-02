@@ -6,7 +6,8 @@ install:
 script: pyinstaller --onefile --name flame -- main.py
 deploy:
   provider: releases
-  api_key: "b3ecdb96e7cdec39a917ec3b4cabcc85311dde8c"
+  api_key:
+    secure: b654c6b8d044152d2611ad49476293cf59fab31f
   file: "dist/flame"
   skip_cleanup: true
   on:
