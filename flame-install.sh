@@ -12,6 +12,8 @@ echo "Compiling Flame..."
 pyinstaller --onefile --name flame -- main.py
 cd dist
 mv ./flame ../../../flame.exec
+echo "Finalizing installation..."
+cd ../../../
+mv ./flame.exec /usr/bin/flame
+sudo rm -rf ./flame-inst flame-install.sh
 echo "Installation finished!"
-echo "WARNING: You need to change Flame of directory. You will need also to remove youself the generated files and folders."
-echo "For make this task, just type in this terminal (you need to have sudo rights): sudo mv ./flame-inst/flame.exec /usr/bin/flame"
