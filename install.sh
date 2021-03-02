@@ -14,7 +14,9 @@ cd dist
 mv flame ../../../flame/
 cd ../../../
 echo "Remove local Git repository..."
-sudo rm -rf /flame
+rm -rf /flame
+echo "Remove installation folder..."
+rm -rf /flame-inst
 echo "Installation finished!"
 echo "WARNING: You need to change Flame of directory."
 echo "For make this task, just type in this terminal (you need to have sudo rights): sudo mv flame /usr/bin/flame"
