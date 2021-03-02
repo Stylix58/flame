@@ -14,6 +14,5 @@ cd dist
 mv flame /usr/bin
 echo "Finalizing installation..."
 cd ../../..
-mv ./flame.exec /usr/bin/flame
 rm -rf ./flame-inst flame-install.sh
 echo "Installation finished!"
