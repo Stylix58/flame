@@ -7,15 +7,16 @@ from os import remove as removefile
 
 __composer_not_installed__ = "Composer can't start because he is not installed! Install it at https://getcomposer.org/doc/00-intro.md#globally!"
 __install_loc_not_set__ = "Flarum installation location is not set! Please set it first using flame locate LOCATION!"
+__config_file_name__ = "flameconf.ini"
 
-if not os.path.exists("conf.ini"):
-    open("conf.ini", "a").close()
+if not os.path.exists(__config_file_name__):
+    open(__config_file_name__, "a").close()
 
-conf_e = ini.parse(open("conf.ini", "r").read())
+conf_e = ini.parse(open(__config_file_name__, "r").read())
 
 def confsave():
-    removefile("conf.ini")
-    with open("conf.ini", "w") as f:
+    removefile(__config_file_name__)
+    with open(__config_file_name__, "w") as f:
         f.write(ini.stringify(conf_e))
         f.close()
 

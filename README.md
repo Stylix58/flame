@@ -1,2 +1,14 @@
-# flame [![Build Status](https://travis-ci.com/Stylix58/flame.svg?branch=main)](https://travis-ci.com/Stylix58/flame)
+# Flame
 Extension installer for Flarum.
+
+# Install
+**IMPORTANT**: Please check if you have installed [Python 3](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py). If not, please install these softwares!
+
+Run in an terminal `wget https://raw.githubusercontent.com/Stylix58/flame/main/install.sh | bash`.
+
+# Commands
+Prefix: `flame`
+
+- `install EXTENSION`: Installs a extension.
+- `uninstall EXTENSION`: Uninstalls a extension.
+- `locate LOCATION`: Changes the configuration for the location of Flarum installation.
