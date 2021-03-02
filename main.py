@@ -29,7 +29,7 @@ def check_env():
         t = conf_e["install_loc"]
     except:
         print(err(__install_loc_not_set__))
-        exit(1)
+        os._exit(1)
     
 
 
@@ -59,7 +59,7 @@ class Flame(object):
         except subprocess.CalledProcessError as e:
             if e.returncode == 127:
                 return err(__composer_not_installed__)
-                exit(1)
+                os._exit(1)
         else:
             return "Extension " + extension + " have been correctly installed!"
 
@@ -71,7 +71,7 @@ class Flame(object):
         except subprocess.CalledProcessError as e:
             if e.returncode == 127:
                 return err(__composer_not_installed__)
-                exit(1)
+                os._exit(1)
         else:
             return "Extension " + extension + " have been correctly uninstalled!"
 
@@ -82,7 +82,7 @@ class Flame(object):
             confsave()
         except:
             return err(__install_loc_not_set__)
-            exit(1)
+            os._exit(1)
         else:
             return "I have correctly changed the install location!"
 
