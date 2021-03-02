@@ -26,11 +26,15 @@ jobs:
       with:
         name: flame-lastest
         path: src/dist/linux
+    
+    - name: Display structure of downloaded files
+      run: ls -R
+      working-directory: src/dist/linux
         
     - name: Release
       uses: fnkr/github-action-ghr@v1
       if: startsWith(github.ref, 'refs/tags/')
       env:
         GHR_COMPRESS: gz
-        GHR_PATH: src/dist/linux/flame-lastest.tar.gz
+        GHR_PATH: src/dist/linux
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
