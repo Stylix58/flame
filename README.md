@@ -15,4 +15,4 @@ Prefix: `flame`
 
 - `install EXTENSION`: Installs a extension.
 - `uninstall EXTENSION`: Uninstalls a extension.
-- `locate LOCATION`: Changes the configuration for the location of Flarum installation.
+- `locate LOCATION`: Changes the configuration for the location of Flarum installation. (IMPORTANT: Please use it with admin rights!)
